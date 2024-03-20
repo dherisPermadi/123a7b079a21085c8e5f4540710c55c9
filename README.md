@@ -5,7 +5,7 @@
 
 This API has been developed by using PHP, PostgreSQL, and Redis. At first Clint have to make a request with Bearer Token credential, then if the Mail data is valid, it will be stored on the database and enqueued right away to the mailer queue managed by Redis, and then the worker will be sending the emails in order.
 
-<img src="./images/design.png"width="800" />
+<img src="./images/design.png" width="800" />
 
 ## Requirement
   - PostgreSQL
