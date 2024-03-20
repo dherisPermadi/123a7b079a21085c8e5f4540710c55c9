@@ -76,4 +76,4 @@ There are 5 types of endpoint for the mailers API:
 <br>
   &emsp;If you wanted to delete certain Mail data, you can use this endpoint.
 
-***Important: the API is using Bearer Key API. So, pay attention to not made any change to the authorization setting of the Postman documentation.***
+***Important: the API is using Bearer Key. So, pay attention to not made any change to the authorization setting of the Postman documentation.***
