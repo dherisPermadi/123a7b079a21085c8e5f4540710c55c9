@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: mailer_stations
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 12341234
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+
+  php:
+    build: .
+    ports:
+      - "8000:8000"
+    command: php config/migration/migrate.php
+    depends_on:
+      - postgres
+      - redis

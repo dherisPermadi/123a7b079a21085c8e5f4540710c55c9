@@ -1,0 +1,13 @@
+{
+  "require": {
+    "ext-pgsql": "*",
+    "predis/predis": "^2.2",
+    "phpmailer/phpmailer": "^6.9",
+    "league/oauth2-client": "^2.7"
+  },
+  "autoload": {
+    "psr-4": {
+        "App\\": "src/"
+    }
+}
+}
